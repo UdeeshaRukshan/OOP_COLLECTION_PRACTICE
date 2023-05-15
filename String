@@ -1,0 +1,31 @@
+package String;
+
+public class string {
+    public static void main(String[] args){
+    String h1=new String("Hello World!");
+    String h2=new String("Hello world!");
+
+    String str1="Hello world!";
+    String str2="Hello world!";
+        System.out.println("Answer"+h1.equals(h2));//false because its 2 different objects
+        System.out.println("Answer:"+str1.equals(str2));//true      // check two variables are equals or not
+
+        //String Builder
+
+        StringBuilder builder=new StringBuilder();
+        StringBuilder builder2=new StringBuilder("New");
+        //this is related to first builder
+        for(int i=0;i<5;i++){
+            builder.append("abc ");
+
+        }
+        System.out.println(builder);//display the text
+
+        //this section is related to builder 2
+        builder2.insert(2,"XYZ");
+        System.out.println(builder2);
+
+
+    }
+
+}
