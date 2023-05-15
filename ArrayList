@@ -1,0 +1,30 @@
+package ArrayList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class arrraylist {
+    public static void main(String[] args){
+        ArrayList<String> fruits = new ArrayList<>();//initializing the ArrayList object
+        System.out.println("Initialize size of fruit:"+fruits.size());//get the fruit size
+        fruits.add ("Banana");//add items to the arraylist end of it
+        fruits.add ("Apple");
+        fruits.add ("Mango");
+        fruits.add ("orange");
+        fruits.add(2,"pinapple");
+
+        fruits.remove(4);//remove item from fruits
+        System. out.println ("Content of al:"+fruits) ;//display array list items
+
+        fruits.remove(3);
+
+        String fruit= fruits.get(1);//select item
+        int item=fruit.length();
+
+        String reversedFruit = new StringBuilder(fruit).reverse().toString();//to reverse the selected item
+        System. out.println ("Content of al after removing index of 3:"+fruits) ;
+
+
+        System.out.println(reversedFruit);//print the reversed item
+    }
+}
