@@ -1,0 +1,26 @@
+package Queue;
+
+import java.util.PriorityQueue;
+
+public class queue {
+    public static void main(String[] args){
+
+        PriorityQueue<Integer> queue=new PriorityQueue<>();
+
+        for(int i=1;i<50;i+=8){
+            queue.add(i);
+        }
+        System.out.println("======Before=====");
+        System.out.println(queue);
+
+        //show first element
+        System.out.println("Queue peek="+queue.peek());
+        //poll delete the first element
+        System.out.println("Queue poll="+queue.poll());
+        //poll delete the second element
+        System.out.println("Queue poll="+queue.poll());
+
+        System.out.println("=======After======");
+        System.out.println(queue);
+    }
+}
